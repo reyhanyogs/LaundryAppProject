@@ -3,9 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Ray/AndroidStudioProjects/LaundryAppProject/app/src/main/res/layout/activity_login.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Ray/AndroidStudioProjects/LaundryAppProject/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Ray/AndroidStudioProjects/LaundryAppProject/app/src/main/res/layout/activity_register.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Ray/AndroidStudioProjects/LaundryAppProject/app/src/main/res/layout/activity_splash_screen.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Ray/AndroidStudioProjects/LaundryAppProject/app/src/main/res/mipmap-anydpi-v26/eye.xml" value="0.196" />
+        <entry key="..\:/Users/Ray/AndroidStudioProjects/LaundryAppProject/app/src/main/res/mipmap-anydpi-v26/eye_round.xml" value="0.196" />
+        <entry key="..\:/Users/Ray/AndroidStudioProjects/LaundryAppProject/app/src/main/res/mipmap-anydpi-v26/eyee.xml" value="0.196" />
+        <entry key="..\:/Users/Ray/AndroidStudioProjects/LaundryAppProject/app/src/main/res/mipmap-anydpi-v26/eyee_round.xml" value="0.196" />
+        <entry key="..\:/Users/Ray/AndroidStudioProjects/LaundryAppProject/app/src/main/res/mipmap-anydpi-v26/facebook.xml" value="0.196" />
+        <entry key="..\:/Users/Ray/AndroidStudioProjects/LaundryAppProject/app/src/main/res/mipmap-anydpi-v26/facebook_round.xml" value="0.196" />
         <entry key="..\:/Users/Ray/AndroidStudioProjects/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
-        <entry key="..\:/Users/Samuel Djodi/LaundryAppProject/app/src/main/res/layout/activity_login.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/Samuel Djodi/LaundryAppProject/app/src/main/res/layout/activity_splash_screen.xml" value="0.22826086956521738" />
       </map>
     </option>
   </component>

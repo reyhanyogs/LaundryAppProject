@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">LaundryAppProject</string>
     <string name="this_is_company_logo">this is company logo</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="lupa_password">Lupa Password</string>
+    <string name="masuk">Masuk</string>
+    <string name="login">LOGIN</string>
+    <string name="daftar">Daftar</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="kata_sandi">Kata Sandi</string>
+    <string name="test">....</string>
+    <string name="logout">Logout</string>
+    <string name="login_gagal">Login gagal</string>
 </resources>
