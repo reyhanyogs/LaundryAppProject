@@ -10,13 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LaundryAppProject">
         <activity
+            android:name=".ActivityWelcome"
+            android:exported="false" />
+        <activity
             android:name=".ActivityLogin"
             android:exported="false"
             android:label="Login" />
         <activity
             android:name=".ActivityRegister"
             android:exported="false"
-            android:label="Register"/>
+            android:label="Register" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
