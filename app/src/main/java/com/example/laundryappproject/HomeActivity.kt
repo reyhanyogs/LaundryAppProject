@@ -10,10 +10,10 @@ import android.widget.Toast
 import android.view.View
 
 
-class HomeActivity : AppCompatActivity(), OnItemSelectedListener {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home
-        )
-    }
-}
+//class HomeActivity : AppCompatActivity(), OnItemSelectedListener {
+//    override fun onCreate(savedInstanceState: Bundle?) {
+//        super.onCreate(savedInstanceState)
+//        setContentView(R.layout.activity_home
+//        )
+//    }
+//}
