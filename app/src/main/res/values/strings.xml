@@ -20,4 +20,8 @@
     <string name="title_place_holder">Title Place Holder</string>
     <string name="oke_laundry">Oke Laundry</string>
     <string name="Lokasi1">Sumbersari, Malang</string>
+    <string name="login_desc">Ayo masuk dan buat pakaianmu\njadi bersih sekarang</string>
+    <string name="daftar_desc">Belum punya akun?</string>
+    <string name="daftar_desc_2">Buat disini!</string>
+    <string name="ketik_disini">Ketik disini....</string>
 </resources>

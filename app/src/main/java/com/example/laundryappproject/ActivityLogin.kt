@@ -20,8 +20,8 @@ class ActivityLogin : AppCompatActivity(), View.OnClickListener {
         setContentView(binding.root)
         auth = Firebase.auth
 
-        binding.btnDaftarLogin.setOnClickListener(this)
         binding.btnLogin.setOnClickListener(this)
+        binding.tvDaftar.setOnClickListener(this)
     }
 
     public override fun onStart() {
@@ -34,16 +34,16 @@ class ActivityLogin : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(p0: View?) {
         when(p0?.id){
-            R.id.btnDaftarLogin -> {
-                val registerIntent = Intent(this, ActivityRegister::class.java)
-                startActivity(registerIntent)
-            }
             R.id.btnLogin -> {
                 if (binding.editTextEmail.text.isNotEmpty() && binding.editTextPassword.text.isNotEmpty()){
                     login(binding.editTextEmail.text.toString(), binding.editTextPassword.text.toString())
                 } else {
                     Toast.makeText(this, "Silahkan mengisi email dan password", Toast.LENGTH_SHORT).show()
                 }
+            }
+            R.id.tvDaftar -> {
+                val registerIntent = Intent(this, ActivityRegister::class.java)
+                startActivity(registerIntent)
             }
         }
     }
