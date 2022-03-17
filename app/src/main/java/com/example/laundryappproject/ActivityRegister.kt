@@ -21,6 +21,7 @@ class ActivityRegister : AppCompatActivity(), View.OnClickListener {
         setContentView(binding.root)
         auth = Firebase.auth
 
+        binding.tvDaftar.setOnClickListener(this)
         binding.btnDaftar.setOnClickListener(this)
     }
 
@@ -35,11 +36,15 @@ class ActivityRegister : AppCompatActivity(), View.OnClickListener {
     override fun onClick(p0: View?) {
         when (p0?.id){
             R.id.btnDaftar -> {
-                if(binding.editTextNamaLengkap.text.isNotEmpty() && binding.editTextEmailRegister.text.isNotEmpty() && binding.editTextPasswordRegister.text.isNotEmpty()) {
+                if(binding.editTextNamaLengkap.text.isNotEmpty() && binding.editTextEmailRegister.text.isNotEmpty() && binding.editTextPasswordRegister.text.isNotEmpty()&&binding.editTextNomor.text.isNotEmpty()&&binding.checkbox.isChecked) {
                     register(binding.editTextNamaLengkap.text.toString(), binding.editTextEmailRegister.text.toString(), binding.editTextPasswordRegister.text.toString())
                 } else {
                     Toast.makeText(this, "Silahkan mengisi semua form di atas", Toast.LENGTH_SHORT).show()
                 }
+            }
+            R.id.tv_daftar -> {
+                val intent = Intent(this@ActivityRegister, ActivityLogin::class.java)
+                startActivity(intent)
             }
         }
     }
@@ -51,6 +56,7 @@ class ActivityRegister : AppCompatActivity(), View.OnClickListener {
                 if (user!=null){
                     val profileUpdate = userProfileChangeRequest {
                         displayName = name
+
                     }
                     user.updateProfile(profileUpdate)
                         .addOnCompleteListener{tasks ->

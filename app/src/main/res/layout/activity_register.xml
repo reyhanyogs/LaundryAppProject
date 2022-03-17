@@ -1,97 +1,219 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ActivityRegister"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".ActivityRegister">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/daftar"
-        android:textColor="@color/black"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/nama_lengkap"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp" />
-
-    <com.google.android.material.textfield.TextInputLayout
+    android:layout_height="match_parent" >
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:boxBackgroundColor="@color/white"
-        app:boxBackgroundMode="outline"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="16dp" >
-        <EditText
-            android:id="@+id/editTextNamaLengkap"
-            android:inputType="text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </com.google.android.material.textfield.TextInputLayout>
+        android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/email"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp" />
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:src="@drawable/wash_in_logo"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="28dp" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:boxBackgroundColor="@color/white"
-        app:boxBackgroundMode="outline"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="16dp" >
-        <EditText
-            android:id="@+id/editTextEmailRegister"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/daftar"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nama_lengkap"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"/>
-    </com.google.android.material.textfield.TextInputLayout>
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeColor="@color/blue"
+            app:hintTextColor="@color/blue"
+            app:hintEnabled="false"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp" >
+            <EditText
+                android:id="@+id/editTextNamaLengkap"
+                android:inputType="text"
+                android:hint="@string/ketik_disini"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/kata_sandi"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kata_sandi"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:boxBackgroundColor="@color/white"
-        app:boxBackgroundMode="outline"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="16dp"
-        app:passwordToggleEnabled="true">
-        <EditText
-            android:id="@+id/editTextPasswordRegister"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword"/>
-    </com.google.android.material.textfield.TextInputLayout>
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeColor="@color/blue"
+            app:hintTextColor="@color/blue"
+            app:hintEnabled="false"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            app:passwordToggleEnabled="true">
+            <EditText
+                android:id="@+id/editTextPasswordRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ketik_disini"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
-        android:id="@+id/btnDaftar"
-        android:layout_width="162dp"
-        android:layout_height="44dp"
-        android:text="@string/daftar"
-        android:layout_marginTop="24dp"
-        android:layout_gravity="center" />
-</LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat"
+            android:textSize="14sp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeColor="@color/blue"
+            app:hintTextColor="@color/blue"
+            app:hintEnabled="false"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp" >
+            <EditText
+                android:id="@+id/editTextEmailRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ketik_disini"
+                android:inputType="textEmailAddress"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/nomor_telepon_hp"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeColor="@color/blue"
+            app:hintTextColor="@color/blue"
+            app:hintEnabled="false"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp" >
+            <EditText
+                android:id="@+id/editTextNomor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ketik_disini"
+                android:inputType="phone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/syarat"
+            android:textSize="14sp"
+            android:fontFamily="@font/inter"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDaftar"
+            android:layout_width="191dp"
+            android:layout_height="40dp"
+            android:text="@string/daftar"
+            android:background="@drawable/rounded"
+            android:textColor="@color/white"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/blue"
+                android:textSize="14sp"
+                android:text="@string/sudah_akun"/>
+
+            <TextView
+                android:id="@+id/tv_daftar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/blue"
+                android:textSize="14sp"
+                android:text="@string/masuk_disini"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_marginStart="5dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -2,11 +2,11 @@
     <string name="app_name">LaundryAppProject</string>
     <string name="this_is_company_logo">this is company logo</string>
     <string name="password">Password</string>
-    <string name="email">Email</string>
+    <string name="email">E-mail</string>
     <string name="lupa_password">Lupa Password</string>
     <string name="masuk">Masuk</string>
     <string name="login">LOGIN</string>
-    <string name="daftar">Daftar</string>
+    <string name="daftar">DAFTAR</string>
     <string name="nama_lengkap">Nama Lengkap</string>
     <string name="kata_sandi">Kata Sandi</string>
     <string name="test">....</string>
@@ -24,4 +24,8 @@
     <string name="daftar_desc">Belum punya akun?</string>
     <string name="daftar_desc_2">Buat disini!</string>
     <string name="ketik_disini">Ketik disini....</string>
+    <string name="nomor_telepon_hp">Nomor Telepon/HP</string>
+    <string name="syarat">Saya setuju dengan <u>Persyaratan Layanan</u> dan <u>Kebijakan Privasi</u></string>
+    <string name="sudah_akun">Sudah punya akun?</string>
+    <string name="masuk_disini">Masuk disini!</string>
 </resources>
