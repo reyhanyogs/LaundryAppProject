@@ -63,6 +63,6 @@ class ActivityLogin : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun reload(){
-        startActivity(Intent(this, MainActivity::class.java))
+        startActivity(Intent(this, HomeActivity::class.java))
     }
 }

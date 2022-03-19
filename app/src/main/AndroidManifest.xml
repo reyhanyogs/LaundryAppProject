@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LaundryAppProject">
         <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_home" />
+        <activity
             android:name=".ActivityWelcome"
             android:exported="false" />
         <activity
@@ -20,9 +24,6 @@
             android:name=".ActivityRegister"
             android:exported="false"
             android:label="Register" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
         <activity
             android:name=".SplashScreen"
             android:exported="true">
